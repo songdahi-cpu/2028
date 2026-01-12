@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>2월 일정 안내, 교사용</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#111b2e;
+      --card2:#0f1830;
+      --text:#eaf0ff;
+      --muted:#b8c3e6;
+      --line:rgba(255,255,255,.12);
+      --accent:#7aa7ff;
+      --accent2:#7bffcf;
+      --chip:#1a2b4f;
+      --shadow: 0 12px 30px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(122,167,255,.22), transparent 60%),
+                  radial-gradient(900px 500px at 85% 30%, rgba(123,255,207,.15), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;
+      line-height:1.5;
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:28px 16px 60px}
+    header{
+      display:flex;gap:14px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;
+      padding:18px 18px 6px;
+    }
+    .title{
+      display:flex;flex-direction:column;gap:6px;
+    }
+    h1{margin:0;font-size:22px;letter-spacing:-.3px}
+    .sub{color:var(--muted);font-size:14px}
+    .badges{display:flex;gap:8px;flex-wrap:wrap}
+    .badge{
+      background:linear-gradient(180deg, rgba(122,167,255,.18), rgba(122,167,255,.08));
+      border:1px solid var(--line);
+      color:var(--text);
+      padding:7px 10px;
+      border-radius:999px;
+      font-size:12px;
+      white-space:nowrap;
+    }
+    .badge.alt{
+      background:linear-gradient(180deg, rgba(123,255,207,.16), rgba(123,255,207,.06));
+    }
+
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:10px}
+    @media (min-width:860px){
+      .grid{grid-template-columns:1fr 1fr}
+    }
+
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .card-head{
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+      padding:16px 16px 10px;
+      background:linear-gradient(90deg, rgba(122,167,255,.12), transparent 50%);
+      border-bottom:1px solid var(--line);
+    }
+    .date{
+      display:flex;flex-direction:column;gap:2px;
+    }
+    .date .d{
+      font-size:16px;font-weight:700;letter-spacing:-.2px
+    }
+    .date .t{
+      font-size:12px;color:var(--muted)
+    }
+    .pill{
+      background:var(--chip);
+      border:1px solid var(--line);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      color:var(--text);
+      white-space:nowrap;
+    }
+
+    .list{padding:8px 12px 14px}
+    .item{
+      display:grid;
+      grid-template-columns: 120px 1fr;
+      gap:12px;
+      padding:10px 10px;
+      border-radius:14px;
+    }
+    .item + .item{border-top:1px dashed rgba(255,255,255,.10)}
+    .time{
+      color:var(--accent2);
+      font-weight:700;
+      font-size:13px;
+      padding-top:2px;
+      white-space:nowrap;
+    }
+    .desc{
+      display:flex;flex-direction:column;gap:2px;
+    }
+    .desc .main{
+      font-size:14px;
+      letter-spacing:-.1px;
+    }
+    .desc .note{
+      font-size:12px;color:var(--muted)
+    }
+
+    .all-day .time{color:var(--accent)}
+    .footer{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:12px;
+      padding:0 6px;
+    }
+
+    /* 작은 화면에서 시간 칼럼 줄이기 */
+    @media (max-width:420px){
+      .item{grid-template-columns: 96px 1fr}
+      .time{font-size:12px}
+      h1{font-size:20px}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="card">
+      <div class="title">
+        <h1>2월 일정 안내 (교사용)</h1>
+        <div class="sub">아래 일정은 안내용이며, 변동 시 공지로 업데이트됩니다.</div>
+      </div>
+      <div class="badges" aria-label="요약 배지">
+        <div class="badge">2/19(수), 전체교사 소화의 날</div>
+        <div class="badge alt">2/20(목), 전체교사 소화의 날</div>
+      </div>
+    </header>
+
+    <section class="grid">
+      <!-- 2/19 -->
+      <article class="card">
+        <div class="card-head">
+          <div class="date">
+            <div class="d">2월 19일, 2025 전체교사 소화의 날</div>
+            <div class="t">주요 일정, 전입교사 PC 배부, 부임식, 연수, 협의회, AIDT 연수, 학교운영위원회</div>
+          </div>
+          <div class="pill">Day 1</div>
+        </div>
+
+        <div class="list">
+          <div class="item">
+            <div class="time">08:40~09:10</div>
+            <div class="desc">
+              <div class="main">전입교사 PC 배부</div>
+              <div class="note">해당 교사 대상</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="time">09:10~09:40</div>
+            <div class="desc">
+              <div class="main">부임식 및 업무분장 발표 (5층 소강당)</div>
+              <div class="note">교장선생님 인사 말씀, 교감선생님 인사 말씀 및 연수</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="time">09:40~10:10</div>
+            <div class="desc">
+              <div class="main">인사, 복무 연수</div>
+              <div class="note">전 교원</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="time">10:10~11:40</div>
+            <div class="desc">
+              <div class="main">부서별 협의회</div>
+              <div class="note">부서별 진행</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="time">11:40~12:40</div>
+            <div class="desc">
+              <div class="main">부서별 중식</div>
+              <div class="note">부서별 운영</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="time">12:40~16:40</div>
+            <div class="desc">
+              <div class="main">AIDT 연수</div>
+              <div class="note">전 교원</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="time">15:30~</div>
+            <div class="desc">
+              <div class="main">학교운영위원회</div>
+              <div class="note">해당 위원, 관계자 참석</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2/20 -->
+      <article class="card">
+        <div class="card-head">
+          <div class="date">
+            <div class="d">2월 20일, 2025 전체교사 소화의 날</div>
+            <div class="t">부서별 연수, 교과 협의, 최소성취수준보장 협의, 부장단 회의, 정리정돈</div>
+          </div>
+          <div class="pill">Day 2</div>
+        </div>
+
+        <div class="list">
+          <div class="item">
+            <div class="time">09:00~11:30</div>
+            <div class="desc">
+              <div class="main">부서별 연수</div>
+              <div class="note">부서별 진행</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="time">11:30~13:00</div>
+            <div class="desc">
+              <div class="main">교과별 중식</div>
+              <div class="note">교과별 운영</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="time">13:00~14:30</div>
+            <div class="desc">
+              <div class="main">교과별 협의회</div>
+              <div class="note">교과별 진행</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="time">14:30~15:00</div>
+            <div class="desc">
+              <div class="main">교과별 협의 결과, 교무부 수업계 제출</div>
+              <div class="note">제출 담당 확인</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="time">14:30~15:30</div>
+            <div class="desc">
+              <div class="main">최소성취수준보장 협의 (해당 교과교사)</div>
+              <div class="note">해당 교과만 진행</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="time">15:30~16:40</div>
+            <div class="desc">
+              <div class="main">2025 부장단 회의</div>
+              <div class="note">이후 각 교무실 정리정돈</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="footer">
+      ※ 표기된 시간과 장소는 학교 운영 상황에 따라 변경될 수 있습니다.
+    </div>
+  </div>
+</body>
+</html>
