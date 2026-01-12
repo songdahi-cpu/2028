@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>부서별 연수 안내</title>
+  <style>
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI","Noto Sans KR",sans-serif;background:#0b1220;color:#eaf0ff}
+    .wrap{max-width:860px;margin:0 auto;padding:24px 16px 56px}
+    .card{background:#111b2e;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px 16px}
+    h1{margin:0 0 10px;font-size:20px}
+    .sub{margin:0 0 14px;color:rgba(234,240,255,.75);font-size:14px}
+    a{color:#7aa7ff;text-decoration:none;font-weight:700}
+    a:hover{text-decoration:underline}
+    .box{margin-top:14px;padding:14px 12px;border-radius:14px;background:rgba(255,255,255,.04);border:1px dashed rgba(255,255,255,.14)}
+    .li{margin:6px 0;color:rgba(234,240,255,.92)}
+    .muted{color:rgba(234,240,255,.7);font-size:12px;margin-top:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>부서별 연수 (2/20 09:00~11:30)</h1>
+      <p class="sub">이 페이지는 “부서별 연수” 항목 클릭 시 이동하는 상세 안내 페이지입니다.</p>
+
+      <div class="box">
+        <div class="li">• 진행: 각 부서별 운영(장소 및 세부 주제는 부서 안내에 따름)</div>
+        <div class="li">• 준비물: 노트북, 필기도구(필요 시)</div>
+        <div class="li">• 문의: 각 부서 담당자</div>
+      </div>
+
+      <p class="muted">
+        ← <a href="index.html">메인 일정으로 돌아가기</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
